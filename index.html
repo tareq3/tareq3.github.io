@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tareq Islam – App Developer</title>
-<meta name="description" content="Tareq Islam builds Android and Flutter apps.">
+<title>Tareq Islam – Software Engineer</title>
+<meta name="description" content="Tareq Islam is a software engineer from Dhaka who builds Flutter, Android and iOS apps.">
+<meta name="author" content="Tareq Islam">
+<link rel="canonical" href="https://tareq3.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tareq Islam – Software Engineer">
+<meta property="og:description" content="Software engineer in Dhaka. Flutter, Android and iOS apps.">
+<meta property="og:url" content="https://tareq3.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%231F6F5C%22/%3E%3Ctext x=%2232%22 y=%2244%22 font-size=%2232%22 font-family=%22Arial%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22%3ETI%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
@@ -25,23 +33,29 @@
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
   font-size:17px;line-height:1.6}
-.wrap{max-width:680px;margin:0 auto;padding:72px 24px 48px}
-header{margin-bottom:64px}
+.wrap{max-width:720px;margin:0 auto;padding:72px 24px 48px}
+header{margin-bottom:56px}
 h1{font-size:clamp(2.6rem,9vw,4.2rem);line-height:1.02;font-weight:800;
   letter-spacing:-0.03em;margin:0 0 20px}
-.lead{font-size:1.25rem;color:var(--soft);max-width:34ch;margin:0}
-h2{font-size:1.1rem;font-weight:800;margin:0 0 16px}
+.lead{font-size:1.25rem;color:var(--soft);max-width:36ch;margin:0 0 20px}
+.links a{margin-right:18px;font-weight:600}
+h2{font-size:1.1rem;font-weight:800;margin:0 0 18px}
+h3{font-size:1rem;font-weight:800;margin:0}
 section{padding:32px 0;border-top:1px solid var(--line)}
 p{margin:0 0 12px}
 .muted{color:var(--soft)}
-.skills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0 0}
-.skills li{background:var(--chip);padding:4px 12px;border-radius:999px;font-size:.9rem;font-weight:600}
-.repos{list-style:none;padding:0;margin:0}
-.repos li{padding:14px 0;border-bottom:1px solid var(--line)}
-.repos li:last-child{border-bottom:0}
-.repos a{font-weight:600}
-.repos .lang{float:right;color:var(--soft);font-size:.85rem}
-.repos .desc{display:block;color:var(--soft);font-size:.95rem}
+ul{margin:0;padding-left:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 14px}
+.chips li{background:var(--chip);padding:4px 12px;border-radius:999px;font-size:.9rem;font-weight:600}
+.job{display:grid;grid-template-columns:130px 1fr;gap:4px 20px;padding:14px 0}
+.job .when{color:var(--soft);font-size:.9rem;padding-top:2px}
+.job p{margin:4px 0 0;color:var(--soft);font-size:.96rem}
+@media (max-width:560px){.job{grid-template-columns:1fr}}
+.list{list-style:none;padding:0;margin:0}
+.list li{padding:12px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border-bottom:0}
+.list .desc{display:block;color:var(--soft);font-size:.95rem}
+.list .tag{float:right;color:var(--soft);font-size:.85rem}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 footer{padding-top:32px;border-top:1px solid var(--line);font-size:.9rem;color:var(--soft)}
@@ -52,50 +66,102 @@ footer a{margin-right:16px}
 <div class="wrap">
   <header>
     <h1>Tareq Islam</h1>
-    <p class="lead">I build Android and Flutter apps from Dhaka, Bangladesh.</p>
+    <p class="lead">Software engineer in Dhaka, Bangladesh. I have built mobile apps for Android, iOS and desktop since 2019.</p>
+    <p class="links">
+      <a href="mailto:mti.tareq3@gmail.com">Email me</a>
+      <a href="https://github.com/tareq3">GitHub</a>
+    </p>
   </header>
 
   <section>
     <h2>About me</h2>
-    <p>I am a software developer. I make mobile apps with Flutter, Dart and Java. I also build back-end APIs with Node.js.</p>
-    <p>I like simple apps that are fast and easy to use.</p>
-    <ul class="skills">
-      <li>Flutter</li><li>Dart</li><li>Android</li><li>Java</li><li>Node.js</li><li>MySQL</li>
+    <p>I build apps with Flutter, Kotlin, Java and Swift. I have worked on point-of-sale systems, mobile banking, e-wallets, healthcare and sales apps.</p>
+    <p>I also make SDKs and Flutter plugins, and set up CI/CD for app releases.</p>
+  </section>
+
+  <section>
+    <h2>Work</h2>
+    <div class="job">
+      <span class="when">2022 – now</span>
+      <div><h3>Software Engineer, Threls</h3>
+      <p>Led iOS and Android SDKs (PCI DSS compliant). Flutter plugins, React Native modules. Worked on Twine POS, an offline-first POS app for Android, iOS, Windows and macOS.</p></div>
+    </div>
+    <div class="job">
+      <span class="when">2021 – 2022</span>
+      <div><h3>Software Engineer, One Bank Ltd</h3>
+      <p>Built and released the OK Wallet and One App mobile banking apps for iOS, Android and Huawei.</p></div>
+    </div>
+    <div class="job">
+      <span class="when">2020 – 2021</span>
+      <div><h3>Software Engineer, Sokrio Technologies</h3>
+      <p>Sales force automation SaaS in Flutter and Android, used by companies like Heidelberg Cement. ERP integration, Vue web front end.</p></div>
+    </div>
+    <div class="job">
+      <span class="when">2019 – 2020</span>
+      <div><h3>Software Engineer, HumacLab</h3>
+      <p>Mobile apps for clients like Apex, Akij and Lal Teer.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Apps I have worked on</h2>
+    <ul class="list">
+      <li><span class="tag">Flutter</span>Twine POS<span class="desc">Offline-first point-of-sale app for Android, iOS, Windows and macOS.</span></li>
+      <li><span class="tag">Flutter</span>Twine Inventory<span class="desc">Stock and product management app for Twine POS.</span></li>
+      <li>MiFinity<span class="desc">eWallet to pay online and send money worldwide.</span></li>
+      <li>OK Wallet<span class="desc">Mobile finance app from One Bank.</span></li>
+      <li>Sokrio<span class="desc">Retail sales channel management, mobile and web.</span></li>
+      <li>Kompass<span class="desc">Meeting and hotel management.</span></li>
+      <li>Smile &amp; Care<span class="desc">Doctor appointments and prescriptions.</span></li>
+      <li>Wisher Angel, Scan +, Compass 3D<span class="desc">Personal apps: auto-wishes, barcode and QR scanner, navigation.</span></li>
     </ul>
   </section>
 
   <section>
-    <h2>My apps</h2>
-    <p class="muted">My first apps are coming soon to Google Play.</p>
+    <h2>My apps on Google Play</h2>
+    <p class="muted">Coming soon.</p>
     <!-- When your app is live, replace the line above with:
     <p><a href="https://play.google.com/store/apps/details?id=YOUR.APP.ID">App name</a> – one line about the app.</p>
     -->
   </section>
 
   <section>
-    <h2>Open-source work</h2>
-    <ul class="repos">
-      <li><span class="lang">Dart</span><a href="https://github.com/tareq3/flutter_getx_template">flutter_getx_template</a>
-        <span class="desc">Starter project for Flutter apps using GetX.</span></li>
-      <li><span class="lang">Java</span><a href="https://github.com/tareq3/Spinner_Date_And_Time_Picker">Spinner_Date_And_Time_Picker</a>
-        <span class="desc">Improved spinner-style date and time picker for Android.</span></li>
-      <li><span class="lang">Java</span><a href="https://github.com/tareq3/Gif_Dialog">Gif_Dialog</a>
-        <span class="desc">Android library to show dialogs with GIFs.</span></li>
-      <li><span class="lang">Java</span><a href="https://github.com/tareq3/Layout_animation">Layout_animation</a>
-        <span class="desc">Example of layout constraint animation.</span></li>
-      <li><span class="lang">JavaScript</span><a href="https://github.com/tareq3/node_sequelize_mysql_api">node_sequelize_mysql_api</a>
-        <span class="desc">Secure REST API with Express, Sequelize, MySQL and JWT.</span></li>
+    <h2>Games</h2>
+    <p><strong>Taxi Hero 3D</strong> – a 3D car racing game made to run well on low-end phones, based on my thesis on mobile game optimization.</p>
+    <p class="muted">Also: Aladin Adventure Run, Basket Rocket, Taxi Tuk Tuk Riding, Subway Dragon Run, Pen Paper Cricket.</p>
+  </section>
+
+  <section>
+    <h2>Open source</h2>
+    <ul class="list">
+      <li><span class="tag">Dart</span><a href="https://github.com/tareq3/flutter_getx_template">flutter_getx_template</a><span class="desc">Starter project for Flutter apps using GetX.</span></li>
+      <li><span class="tag">Java</span><a href="https://github.com/tareq3/Spinner_Date_And_Time_Picker">Spinner_Date_And_Time_Picker</a><span class="desc">Spinner-style date and time picker for Android.</span></li>
+      <li><span class="tag">Java</span><a href="https://github.com/tareq3/Gif_Dialog">Gif_Dialog</a><span class="desc">Android dialogs with GIFs.</span></li>
+      <li><span class="tag">JavaScript</span><a href="https://github.com/tareq3/node_sequelize_mysql_api">node_sequelize_mysql_api</a><span class="desc">Secure REST API with Express, Sequelize, MySQL and JWT.</span></li>
     </ul>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/tareq3">github.com/tareq3</a></p>
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>Flutter</li><li>Dart</li><li>Kotlin</li><li>Java</li><li>Swift</li><li>TypeScript</li>
+      <li>Node.js</li><li>Spring</li><li>Vue</li><li>Unity (C#)</li>
+      <li>Firebase</li><li>MySQL</li><li>MongoDB</li><li>Fastlane</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education and awards</h2>
+    <p><strong>B.S. in Information Technology</strong>, University of Information Technology and Sciences, Dhaka (2013 – 2017)</p>
+    <p><strong>Best Project Presentation Award</strong>, UITS (2017) – AR zombie shooter game with Vuforia and Unity.</p>
+    <p><strong>Champion</strong>, UITS 0/1 Project Show (2016) – 3D action-adventure game.</p>
   </section>
 
   <footer>
+    <a href="mailto:mti.tareq3@gmail.com">mti.tareq3@gmail.com</a>
     <a href="privacy-policy.html">Privacy policy</a>
+    <a href="terms.html">Terms</a>
+    <a href="delete-account.html">Delete my data</a>
     <span>© 2026 Tareq Islam</span>
   </footer>
 </div>
