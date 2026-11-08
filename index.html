@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tareq Islam – App Developer</title>
+<meta name="description" content="Tareq Islam builds Android and Flutter apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6F9; --ink:#14212B; --soft:#55656F; --line:#D5DEE5;
+  --accent:#1F6F5C; --chip:#E3ECEA;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121A20; --ink:#E6EDF1; --soft:#9AAAB4; --line:#2A3740;
+    --accent:#5EC4A8; --chip:#1C2A2F;
+    color-scheme: dark;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding:72px 24px 48px}
+header{margin-bottom:64px}
+h1{font-size:clamp(2.6rem,9vw,4.2rem);line-height:1.02;font-weight:800;
+  letter-spacing:-0.03em;margin:0 0 20px}
+.lead{font-size:1.25rem;color:var(--soft);max-width:34ch;margin:0}
+h2{font-size:1.1rem;font-weight:800;margin:0 0 16px}
+section{padding:32px 0;border-top:1px solid var(--line)}
+p{margin:0 0 12px}
+.muted{color:var(--soft)}
+.skills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:16px 0 0}
+.skills li{background:var(--chip);padding:4px 12px;border-radius:999px;font-size:.9rem;font-weight:600}
+.repos{list-style:none;padding:0;margin:0}
+.repos li{padding:14px 0;border-bottom:1px solid var(--line)}
+.repos li:last-child{border-bottom:0}
+.repos a{font-weight:600}
+.repos .lang{float:right;color:var(--soft);font-size:.85rem}
+.repos .desc{display:block;color:var(--soft);font-size:.95rem}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+footer{padding-top:32px;border-top:1px solid var(--line);font-size:.9rem;color:var(--soft)}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Tareq Islam</h1>
+    <p class="lead">I build Android and Flutter apps from Dhaka, Bangladesh.</p>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <p>I am a software developer. I make mobile apps with Flutter, Dart and Java. I also build back-end APIs with Node.js.</p>
+    <p>I like simple apps that are fast and easy to use.</p>
+    <ul class="skills">
+      <li>Flutter</li><li>Dart</li><li>Android</li><li>Java</li><li>Node.js</li><li>MySQL</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My apps</h2>
+    <p class="muted">My first apps are coming soon to Google Play.</p>
+    <!-- When your app is live, replace the line above with:
+    <p><a href="https://play.google.com/store/apps/details?id=YOUR.APP.ID">App name</a> – one line about the app.</p>
+    -->
+  </section>
+
+  <section>
+    <h2>Open-source work</h2>
+    <ul class="repos">
+      <li><span class="lang">Dart</span><a href="https://github.com/tareq3/flutter_getx_template">flutter_getx_template</a>
+        <span class="desc">Starter project for Flutter apps using GetX.</span></li>
+      <li><span class="lang">Java</span><a href="https://github.com/tareq3/Spinner_Date_And_Time_Picker">Spinner_Date_And_Time_Picker</a>
+        <span class="desc">Improved spinner-style date and time picker for Android.</span></li>
+      <li><span class="lang">Java</span><a href="https://github.com/tareq3/Gif_Dialog">Gif_Dialog</a>
+        <span class="desc">Android library to show dialogs with GIFs.</span></li>
+      <li><span class="lang">Java</span><a href="https://github.com/tareq3/Layout_animation">Layout_animation</a>
+        <span class="desc">Example of layout constraint animation.</span></li>
+      <li><span class="lang">JavaScript</span><a href="https://github.com/tareq3/node_sequelize_mysql_api">node_sequelize_mysql_api</a>
+        <span class="desc">Secure REST API with Express, Sequelize, MySQL and JWT.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/tareq3">github.com/tareq3</a></p>
+  </section>
+
+  <footer>
+    <a href="privacy-policy.html">Privacy policy</a>
+    <span>© 2026 Tareq Islam</span>
+  </footer>
+</div>
+</body>
+</html>
